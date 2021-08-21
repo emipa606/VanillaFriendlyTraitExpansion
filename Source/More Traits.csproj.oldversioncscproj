@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B15B301E-642B-4AC7-B8F1-99E63B0CAA1D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Garthor_More_Traits</RootNamespace>
+    <AssemblyName>More Traits</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="0Harmony" />
+    <Reference Include="AbilityUser" />
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="SyrDoorMats" />
+    <Reference Include="System.Core">
+      <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Building_Door_CheckFriendlyTouched_Patch.cs" />
+    <Compile Include="Building_Door_Notify_PawnApproaching_Patch.cs" />
+    <Compile Include="Building_Door_StartManualCloseBy_Patch.cs" />
+    <Compile Include="Building_Door_StartManualOpenBy_Patch.cs" />
+    <Compile Include="Building_Door_Tick_Patch.cs" />
+    <Compile Include="CaravanTicksPerMoveUtility_GetTicksPerMove_Patch.cs" />
+    <Compile Include="Compatibility\JecsTools.cs" />
+    <Compile Include="Compatibility\PatchIfModAttribute.cs" />
+    <Compile Include="Compatibility\Syr_Doormats.cs" />
+    <Compile Include="FloatMenuUtility_GetMeleeAttackAction_Patch.cs" />
+    <Compile Include="FloatMenuUtility_GetRangedAttackAction_Patch.cs" />
+    <Compile Include="FoodUtility_IsAcceptablePreyFor_Patch.cs" />
+    <Compile Include="GenHostility_HostileTo_Patch.cs" />
+    <Compile Include="GMT_Animal_Friend_Helper.cs" />
+    <Compile Include="GMT_Boring_Helper.cs" />
+    <Compile Include="GMT_Caravaneer_Helper.cs" />
+    <Compile Include="GMT_DefOf.cs" />
+    <Compile Include="GMT_Drunken_Master_Helper.cs" />
+    <Compile Include="GMT_Hediff_Berserker_Ire.cs" />
+    <Compile Include="GMT_Hediff_Berserker_Rage.cs" />
+    <Compile Include="GMT_JobDriver_AttackMeleeDowned.cs" />
+    <Compile Include="GMT_JobGiver_FightDownedEnemies.cs" />
+    <Compile Include="GMT_MentalStateWorker_Berserking.cs" />
+    <Compile Include="GMT_MentalStateWorker_BoredToSleep.cs" />
+    <Compile Include="GMT_MentalState_Berserking.cs" />
+    <Compile Include="GMT_MentalState_BoredToSleep.cs" />
+    <Compile Include="GMT_Slob_Helper.cs" />
+    <Compile Include="GMT_StatPart_Drunken_Master.cs" />
+    <Compile Include="GMT_Teacher_Helper.cs" />
+    <Compile Include="GMT_Trait_ModExtension.cs" />
+    <Compile Include="JobGiver_TakeCombatEnhancingDrug_FindCombatEnhancingDrug_Pat.cs" />
+    <Compile Include="Main.cs" />
+    <Compile Include="PawnInventoryGenerator_GiveDrugsIfAddicted_Patch.cs" />
+    <Compile Include="Pawn_FilthTracker_Notify_EnteredNewCell_Patch.cs" />
+    <Compile Include="Pawn_InteractionsTracker_TryInteractWith_Patch_Boring.cs" />
+    <Compile Include="Pawn_InteractionsTracker_TryInteractWith_Patch_Teacher.cs" />
+    <Compile Include="Pawn_InventoryTracker_FindCombatEnhancingDrug_Patch.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Thing_PostApplyDamage_Patch.cs" />
+    <Compile Include="TraitSet_GainTrait_Patch.cs" />
+    <Compile Include="Traits\GMT_Juggernaut_Helper.cs" />
+    <Compile Include="Traits\Pawn_StanceTracker_StaggerFor_Patch.cs" />
+    <Compile Include="Traits\StunHandler_StunFor_Patch.cs" />
+    <Compile Include="Verb_ValidateTarget_Patch.cs" />
+    <Compile Include="WorkGiver_Slaughter_HasJobOnThing_Patch.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
