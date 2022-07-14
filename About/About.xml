@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
   <name>Vanilla-Friendly Trait Expansion (Continued)</name>
   <packageId>Mlie.VanillaFriendlyTraitExpansion</packageId>
@@ -21,20 +21,24 @@
     <li>brrainz.harmony</li>
     <li>jecrell.jecstools</li>
   </loadAfter>
-  <description>[img]https://i.imgur.com/WAEzk68.png[/img]
+  <description>[img]https://i.imgur.com/buuPQel.png[/img]
 Update of Garthors mod
 https://steamcommunity.com/sharedfiles/filedetails/?id=2100640669
 
-[img]https://i.imgur.com/7Gzt3Rg.png[/img]
+[img]https://i.imgur.com/pufA0kM.png[/img]
 
 [table]
     [tr]
         [td][url=https://invite.gg/Mlie][img]https://i.imgur.com/zdzzBrc.png[/img][/url][/td]
         [td][url=https://github.com/emipa606/VanillaFriendlyTraitExpansion][img]https://i.imgur.com/kTkpTOE.png[/img][/url][/td]
     [/tr]
+    [tr]
+        [td][img]https://i.imgur.com/WjDSfUn.png[/img][/td]
+        [td][img]https://i.imgur.com/Be8E2qJ.png[/img][/td]
+    [/tr]
 [/table]
 	
-[img]https://i.imgur.com/NOW7jU1.png[/img]
+[img]https://i.imgur.com/Z4GOv8H.png[/img]
 Adds more traits that are vanilla-friendly.
 The goal is for the traits to be of a power level in line with vanilla, and more interesting than just a bundle of stats.
 - Animal Empathy: Cannot harm animals, and cannot be harmed by animals.
@@ -46,7 +50,7 @@ The goal is for the traits to be of a power level in line with vanilla, and more
 - Berserker: In combat, may fly into a berserk rage, becoming significantly stronger but uncontrollable.
 - Juggernaut: Immunity to stuns and staggers.
 
-[img]https://i.imgur.com/Rs6T6cr.png[/img]
+[img]https://i.imgur.com/PwoNOj4.png[/img]
 [list]
 [*] See if the the error persists if you just have this mod and its requirements active.
 [*] If not, try adding your other mods until it happens again.
@@ -57,4 +61,3 @@ The goal is for the traits to be of a power level in line with vanilla, and more
 [/list]
 </description>
 </ModMetaData>
-
