@@ -1,7 +1,5 @@
-﻿namespace Garthor_More_Traits.Traits
+namespace Garthor_More_Traits.Traits;
+
+public static class GMT_Juggernaut_Helper
 {
-    // Token: 0x02000028 RID: 40
-    public static class GMT_Juggernaut_Helper
-    {
-    }
 }

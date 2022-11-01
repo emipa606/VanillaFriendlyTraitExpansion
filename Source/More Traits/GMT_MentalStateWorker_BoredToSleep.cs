@@ -1,9 +1,7 @@
-﻿using Verse.AI;
+using Verse.AI;
 
-namespace Garthor_More_Traits
+namespace Garthor_More_Traits;
+
+public class GMT_MentalStateWorker_BoredToSleep : MentalStateWorker
 {
-    // Token: 0x02000010 RID: 16
-    public class GMT_MentalStateWorker_BoredToSleep : MentalStateWorker
-    {
-    }
 }

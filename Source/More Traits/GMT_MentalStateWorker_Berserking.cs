@@ -1,9 +1,7 @@
-﻿using Verse.AI;
+using Verse.AI;
 
-namespace Garthor_More_Traits
+namespace Garthor_More_Traits;
+
+public class GMT_MentalStateWorker_Berserking : MentalStateWorker
 {
-    // Token: 0x02000016 RID: 22
-    public class GMT_MentalStateWorker_Berserking : MentalStateWorker
-    {
-    }
 }
