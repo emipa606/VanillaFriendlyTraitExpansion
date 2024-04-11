@@ -7,18 +7,17 @@ using Verse;
 
 namespace Garthor_More_Traits;
 
-[HarmonyPatch(typeof(Building_Door), "Tick")]
+[HarmonyPatch(typeof(Building_Door), nameof(Building_Door.Tick))]
 public static class Building_Door_Tick_Patch
 {
     private static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
     {
         var i = 0;
         var instrs = instructions.ToList();
-        var cellContains = AccessTools.Method(typeof(ThingGrid), "CellContains", new[]
-        {
+        var cellContains = AccessTools.Method(typeof(ThingGrid), "CellContains", [
             typeof(IntVec3),
             typeof(ThingCategory)
-        });
+        ]);
         var found = false;
         while (i < instrs.Count)
         {

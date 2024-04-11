@@ -4,7 +4,7 @@ using Verse;
 
 namespace Garthor_More_Traits;
 
-[HarmonyPatch(typeof(FoodUtility), "IsAcceptablePreyFor", typeof(Pawn), typeof(Pawn))]
+[HarmonyPatch(typeof(FoodUtility), nameof(FoodUtility.IsAcceptablePreyFor), typeof(Pawn), typeof(Pawn))]
 public static class FoodUtility_IsAcceptablePreyFor_Patch
 {
     private static bool Prefix(ref bool __result, Pawn predator, Pawn prey)

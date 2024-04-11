@@ -4,7 +4,7 @@ using Verse;
 
 namespace Garthor_More_Traits.Traits;
 
-[HarmonyPatch(typeof(StunHandler), "StunFor")]
+[HarmonyPatch(typeof(StunHandler), nameof(StunHandler.StunFor))]
 public class StunHandler_StunFor_Patch
 {
     private static void Prefix(StunHandler __instance, ref int ticks, ref bool addBattleLog)

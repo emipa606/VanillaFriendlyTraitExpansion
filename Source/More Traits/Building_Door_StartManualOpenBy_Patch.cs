@@ -4,7 +4,7 @@ using Verse;
 
 namespace Garthor_More_Traits;
 
-[HarmonyPatch(typeof(Building_Door), "StartManualOpenBy")]
+[HarmonyPatch(typeof(Building_Door), nameof(Building_Door.StartManualOpenBy))]
 public static class Building_Door_StartManualOpenBy_Patch
 {
     private static void Postfix(Building_Door __instance, Pawn opener, ref int ___ticksUntilClose)

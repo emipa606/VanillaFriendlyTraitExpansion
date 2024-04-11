@@ -5,7 +5,7 @@ using Verse.AI;
 
 namespace Garthor_More_Traits;
 
-[HarmonyPatch(typeof(WorkGiver_Slaughter), "HasJobOnThing")]
+[HarmonyPatch(typeof(WorkGiver_Slaughter), nameof(WorkGiver_Slaughter.HasJobOnThing))]
 public static class WorkGiver_Slaughter_HasJobOnThing_Patch
 {
     private static bool Prefix(Pawn pawn, Thing t)

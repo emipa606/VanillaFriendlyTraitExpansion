@@ -3,7 +3,7 @@ using Verse;
 
 namespace Garthor_More_Traits;
 
-[HarmonyPatch(typeof(Verb), "ValidateTarget")]
+[HarmonyPatch(typeof(Verb), nameof(Verb.ValidateTarget))]
 public static class Verb_ValidateTarget_Patch
 {
     private static bool Prefix(Verb __instance, ref bool __result, LocalTargetInfo target)

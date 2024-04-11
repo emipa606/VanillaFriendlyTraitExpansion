@@ -4,7 +4,7 @@ using Verse;
 
 namespace Garthor_More_Traits;
 
-[HarmonyPatch(typeof(Building_Door), "Notify_PawnApproaching")]
+[HarmonyPatch(typeof(Building_Door), nameof(Building_Door.Notify_PawnApproaching))]
 public static class Building_Door_Notify_PawnApproaching_Patch
 {
     private static void Postfix(Building_Door __instance, Pawn p, ref int ___ticksUntilClose)

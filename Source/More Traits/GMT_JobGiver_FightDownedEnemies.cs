@@ -38,13 +38,13 @@ public class GMT_JobGiver_FightDownedEnemies : JobGiver_AIFightEnemies
         switch (enemyTarget)
         {
             case null:
-            case Pawn pawn2 when pawn2.IsInvisible():
+            case Pawn pawn2 when pawn.CanSee(pawn2):
                 result = null;
                 break;
             default:
             {
                 var verb = pawn.meleeVerbs.TryGetMeleeVerb(enemyTarget);
-                result = verb != null ? MeleeAttackJob(enemyTarget) : null;
+                result = verb != null ? MeleeAttackJob(pawn, enemyTarget) : null;
                 break;
             }
         }
@@ -60,7 +60,7 @@ public class GMT_JobGiver_FightDownedEnemies : JobGiver_AIFightEnemies
             0f, targetAcquireRadius, GetFlagPosition(pawn), GetFlagRadius(pawn));
     }
 
-    protected override Job MeleeAttackJob(Thing enemyTarget)
+    protected override Job MeleeAttackJob(Pawn pawn, Thing enemyTarget)
     {
         var job = JobMaker.MakeJob(GMT_DefOf.GMT_Job_AttackMeleeDowned, enemyTarget);
         job.expiryInterval = My_ExpiryInterval_Melee.RandomInRange;

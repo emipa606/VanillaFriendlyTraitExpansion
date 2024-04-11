@@ -12,8 +12,7 @@ internal class Main
 {
     static Main()
     {
-        var harmony = new Harmony("Garthor.More_Traits");
-        harmony.PatchAll();
+        new Harmony("Garthor.More_Traits").PatchAll();
         var enumerable = from x in Assembly.GetExecutingAssembly().GetTypes()
             where x.IsClass && x.Namespace == "Garthor_More_Traits.Compatibility"
             select x;
@@ -33,7 +32,7 @@ internal class Main
                     MethodBase method = harmonyPatch.info.declaringType.GetMethod(harmonyPatch.info.methodName);
                     if (method is not null && !dictionary.ContainsKey(method))
                     {
-                        dictionary.Add(method, new PatchProcessor(harmony, method));
+                        dictionary.Add(method, new PatchProcessor(new Harmony("Garthor.More_Traits"), method));
                     }
 
                     if (method is null)

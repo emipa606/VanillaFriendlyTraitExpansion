@@ -11,7 +11,7 @@ public static class GMT_Boring_Helper
     {
         {
             InteractionDefOf.BuildRapport,
-            0.15f
+            boring_severity
         },
         {
             InteractionDefOf.AnimalChat,

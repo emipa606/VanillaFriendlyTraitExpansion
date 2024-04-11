@@ -5,7 +5,7 @@ using Verse;
 
 namespace Garthor_More_Traits;
 
-[HarmonyPatch(typeof(FloatMenuUtility), "GetMeleeAttackAction")]
+[HarmonyPatch(typeof(FloatMenuUtility), nameof(FloatMenuUtility.GetMeleeAttackAction))]
 public static class FloatMenuUtility_GetMeleeAttackAction_Patch
 {
     private static bool Prefix(ref Action __result, Pawn pawn, LocalTargetInfo target, out string failStr)

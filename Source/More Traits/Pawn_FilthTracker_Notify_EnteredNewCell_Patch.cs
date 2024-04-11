@@ -4,7 +4,7 @@ using Verse;
 
 namespace Garthor_More_Traits;
 
-[HarmonyPatch(typeof(Pawn_FilthTracker), "Notify_EnteredNewCell")]
+[HarmonyPatch(typeof(Pawn_FilthTracker), nameof(Pawn_FilthTracker.Notify_EnteredNewCell))]
 public static class Pawn_FilthTracker_Notify_EnteredNewCell_Patch
 {
     private static void Postfix(Pawn_FilthTracker __instance, Pawn ___pawn)

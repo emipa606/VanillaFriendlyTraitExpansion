@@ -10,7 +10,7 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Krafs.Rimworld.Ref">
-      <Version>1.4.3523-beta</Version>
+      <Version>*</Version>
       <ExcludeAssets>runtime</ExcludeAssets>
       <IncludeAssets>compile; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
@@ -18,5 +18,15 @@
       <Version>*</Version>
       <ExcludeAssets>runtime</ExcludeAssets>
     </PackageReference>
+	  <Reference Include="AbilityUser">
+		  <HintPath>..\..\..\..\..\..\workshop\content\294100\932008009\1.4\Assemblies\AbilityUser.dll</HintPath>
+		  <CopyLocal>False</CopyLocal>
+		  <Private>false</Private>
+	  </Reference>
+	  <Reference Include="SyrDoorMats">
+		  <HintPath>..\..\..\..\..\..\workshop\content\294100\1508778962\1.4\Assemblies\SyrDoorMats.dll</HintPath>
+		  <CopyLocal>False</CopyLocal>
+		  <Private>false</Private>
+	  </Reference>
   </ItemGroup>
 </Project>

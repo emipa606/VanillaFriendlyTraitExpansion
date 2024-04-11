@@ -4,7 +4,7 @@ using Verse;
 
 namespace Garthor_More_Traits.Traits;
 
-[HarmonyPatch(typeof(StaggerHandler), "StaggerFor", typeof(int), typeof(float))]
+[HarmonyPatch(typeof(StaggerHandler), nameof(StaggerHandler.StaggerFor), typeof(int), typeof(float))]
 public static class StaggerHandler_StaggerFor_Patch
 {
     private static void Prefix(Pawn_StanceTracker __instance, ref int ticks)

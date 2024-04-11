@@ -6,12 +6,12 @@ using Verse;
 
 namespace Garthor_More_Traits;
 
-[HarmonyPatch(typeof(Pawn_InventoryTracker), "FindCombatEnhancingDrug")]
+[HarmonyPatch(typeof(Pawn_InventoryTracker), nameof(Pawn_InventoryTracker.FindCombatEnhancingDrug))]
 public class Pawn_InventoryTracker_FindCombatEnhancingDrug_Patch
 {
     private static bool Prepare()
     {
-        var method = typeof(Pawn_InventoryTracker).GetMethod("FindCombatEnhancingDrug",
+        var method = typeof(Pawn_InventoryTracker).GetMethod(nameof(Pawn_InventoryTracker.FindCombatEnhancingDrug),
             BindingFlags.Instance | BindingFlags.Public);
         return !(method == null || method.HasAttribute<ObsoleteAttribute>());
     }

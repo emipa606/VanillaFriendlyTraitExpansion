@@ -4,7 +4,7 @@ using Verse;
 
 namespace Garthor_More_Traits;
 
-[HarmonyPatch(typeof(Building_Door), "StartManualCloseBy")]
+[HarmonyPatch(typeof(Building_Door), nameof(Building_Door.StartManualCloseBy))]
 public static class Building_Door_StartManualCloseBy_Patch
 {
     private static bool Prefix(Pawn closer)

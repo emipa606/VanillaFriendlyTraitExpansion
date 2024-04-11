@@ -7,14 +7,13 @@ using Verse;
 
 namespace Garthor_More_Traits;
 
-[HarmonyPatch(typeof(CaravanTicksPerMoveUtility), "GetTicksPerMove")]
-[HarmonyPatch(new[]
-{
+[HarmonyPatch(typeof(CaravanTicksPerMoveUtility), nameof(CaravanTicksPerMoveUtility.GetTicksPerMove))]
+[HarmonyPatch([
     typeof(List<Pawn>),
     typeof(float),
     typeof(float),
     typeof(StringBuilder)
-})]
+])]
 public static class CaravanTicksPerMoveUtility_GetTicksPerMove_Patch
 {
     private static void Postfix(ref int __result, List<Pawn> pawns, StringBuilder explanation)

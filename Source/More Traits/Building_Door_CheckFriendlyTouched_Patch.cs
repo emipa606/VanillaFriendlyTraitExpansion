@@ -4,7 +4,7 @@ using Verse;
 
 namespace Garthor_More_Traits;
 
-[HarmonyPatch(typeof(Building_Door), "CheckFriendlyTouched")]
+[HarmonyPatch(typeof(Building_Door), nameof(Building_Door.CheckFriendlyTouched))]
 public static class Building_Door_CheckFriendlyTouched_Patch
 {
     private static void Postfix(Building_Door __instance, Pawn p, ref int ___lastFriendlyTouchTick)

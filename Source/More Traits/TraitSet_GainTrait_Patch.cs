@@ -5,7 +5,7 @@ using Verse;
 
 namespace Garthor_More_Traits;
 
-[HarmonyPatch(typeof(TraitSet), "GainTrait")]
+[HarmonyPatch(typeof(TraitSet), nameof(TraitSet.GainTrait))]
 public static class TraitSet_GainTrait_Patch
 {
     private static FieldInfo fieldinfo_pawn;

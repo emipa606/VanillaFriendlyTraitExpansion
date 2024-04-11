@@ -3,7 +3,7 @@ using Verse;
 
 namespace Garthor_More_Traits;
 
-[HarmonyPatch(typeof(Thing), "PostApplyDamage")]
+[HarmonyPatch(typeof(Thing), nameof(Thing.PostApplyDamage))]
 public static class Thing_PostApplyDamage_Patch
 {
     private static bool Prefix(Thing __instance, DamageInfo dinfo, float totalDamageDealt)

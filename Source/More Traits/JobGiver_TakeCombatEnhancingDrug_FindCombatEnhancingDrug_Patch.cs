@@ -40,7 +40,6 @@ public class JobGiver_TakeCombatEnhancingDrug_FindCombatEnhancingDrug_Patch
                     hediff.Severity = ingestionOutcomeDoer_GiveHediff.severity;
                     if (!pawn.health.WouldBeDownedAfterAddingHediff(hediff))
                     {
-                        Log.Message("result");
                         __result = thing;
                         break;
                     }
