@@ -22,17 +22,17 @@ public static class GMT_Animal_Friend_Helper
         return result;
     }
 
-    internal static bool isAnimalFriend(Pawn p)
+    private static bool isAnimalFriend(Pawn p)
     {
         return p?.story?.traits?.HasTrait(GMT_DefOf.GMT_Animal_Friend) == true;
     }
 
-    internal static bool isAnimalOrHive(Thing t)
+    private static bool isAnimalOrHive(Thing t)
     {
         return t != null && t.def == ThingDefOf.Hive || isAnimalOrHive(t as Pawn);
     }
 
-    internal static bool isAnimalOrHive(Pawn p)
+    private static bool isAnimalOrHive(Pawn p)
     {
         return p?.RaceProps?.Animal == true;
     }

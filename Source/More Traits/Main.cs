@@ -12,7 +12,7 @@ internal class Main
 {
     static Main()
     {
-        new Harmony("Garthor.More_Traits").PatchAll();
+        new Harmony("Garthor.More_Traits").PatchAll(Assembly.GetExecutingAssembly());
         var enumerable = from x in Assembly.GetExecutingAssembly().GetTypes()
             where x.IsClass && x.Namespace == "Garthor_More_Traits.Compatibility"
             select x;

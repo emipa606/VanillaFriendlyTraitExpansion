@@ -1,16 +1,17 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <OutputPath>..\..\1.5\Assemblies</OutputPath>
+    <OutputPath>..\..\1.6\Assemblies</OutputPath>
     <TargetFramework>net48</TargetFramework>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
     <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
     <DebugType>None</DebugType>
     <LangVersion>latest</LangVersion>
-    <FileVersion>1.5.0</FileVersion>
+    <FileVersion>1.6.0</FileVersion>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Krafs.Rimworld.Ref">
-      <Version>1.5.4061-beta</Version>
+      <Version>1.6.4530-beta</Version>
       <ExcludeAssets>runtime</ExcludeAssets>
       <IncludeAssets>compile; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
@@ -18,13 +19,13 @@
       <Version>*</Version>
       <ExcludeAssets>runtime</ExcludeAssets>
     </PackageReference>
-    <Reference Include="AbilityUser">
-      <HintPath>..\..\..\..\..\..\workshop\content\294100\932008009\1.5\Assemblies\AbilityUser.dll</HintPath>
+    <Reference Include="JecsTools.AbilityUser">
+      <HintPath>..\..\..\..\..\..\workshop\content\294100\3524247750\1.6\Assemblies\AbilityUser.dll</HintPath>
       <CopyLocal>False</CopyLocal>
       <Private>false</Private>
     </Reference>
-    <Reference Include="SyrDoorMats">
-      <HintPath>..\..\..\..\..\..\workshop\content\294100\1508778962\1.4\Assemblies\SyrDoorMats.dll</HintPath>
+    <Reference Include="DoorMats">
+      <HintPath>..\..\..\..\..\..\workshop\content\294100\3239838811\1.6\Assemblies\DoorMats.dll</HintPath>
       <CopyLocal>False</CopyLocal>
       <Private>false</Private>
     </Reference>

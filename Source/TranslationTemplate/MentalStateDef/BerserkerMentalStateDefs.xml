@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: BERSERKING -->
+  <GMT_MentalState_Berserking.label>BERSERKING</GMT_MentalState_Berserking.label>
+  <!-- EN: Mental state: Berserker Rage -->
+  <GMT_MentalState_Berserking.baseInspectLine>Mental state: Berserker Rage</GMT_MentalState_Berserking.baseInspectLine>
+  <!-- EN: {0} has gone into a Berserker rage.\n\n[PAWN_pronoun] will attack any enemies [PAWN_pronoun] sees. -->
+  <GMT_MentalState_Berserking.beginLetter>{0} has gone into a Berserker rage.
+
+[PAWN_pronoun] will attack any enemies [PAWN_pronoun] sees.</GMT_MentalState_Berserking.beginLetter>
+  <!-- EN: {0}'s Berserker rage has come to an end. -->
+  <GMT_MentalState_Berserking.recoveryMessage>{0}'s Berserker rage has come to an end.</GMT_MentalState_Berserking.recoveryMessage>
+</LanguageData>

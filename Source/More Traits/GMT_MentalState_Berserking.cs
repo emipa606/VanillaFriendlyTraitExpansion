@@ -11,12 +11,12 @@ public class GMT_MentalState_Berserking : MentalState
 
     public int lastInsultTicks = int.MinValue;
 
-    public override void MentalStateTick()
+    public override void MentalStateTick(int delta)
     {
-        if (pawn.IsHashIntervalTick(180))
+        if (pawn.IsHashIntervalTick(180, delta))
         {
             var source = from thing in GenRadial.RadialDistinctThingsAround(pawn.Position, pawn.Map, 5f, false)
-                where thing is Pawn pawn1 && InteractionUtility.CanReceiveRandomInteraction(pawn1)
+                where thing is Pawn pawn1 && SocialInteractionUtility.CanReceiveRandomInteraction(pawn1)
                 select thing as Pawn;
             if (source.TryRandomElement(out var recipient))
             {
@@ -24,7 +24,7 @@ public class GMT_MentalState_Berserking : MentalState
             }
         }
 
-        base.MentalStateTick();
+        base.MentalStateTick(delta);
     }
 
     public override void PreStart()

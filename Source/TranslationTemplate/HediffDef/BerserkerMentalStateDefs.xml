@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Berserker Ire -->
+  <GMT_Hediff_Berserker_Ire.label>Berserker Ire</GMT_Hediff_Berserker_Ire.label>
+  <!-- EN: This person is getting angry. You won't like them when they're angry. -->
+  <GMT_Hediff_Berserker_Ire.description>This person is getting angry. You won't like them when they're angry.</GMT_Hediff_Berserker_Ire.description>
+  <!-- EN: berserker ire -->
+  <GMT_Hediff_Berserker_Ire.labelNoun>berserker ire</GMT_Hediff_Berserker_Ire.labelNoun>
+  <!-- EN: Angry -->
+  <GMT_Hediff_Berserker_Ire.stages.Angry.label>Angry</GMT_Hediff_Berserker_Ire.stages.Angry.label>
+  <!-- EN: Berserker Rage -->
+  <GMT_Hediff_Berserker_Rage.label>Berserker Rage</GMT_Hediff_Berserker_Rage.label>
+  <!-- EN: This person has flown into a berserk rage. They are significantly more capable in combat, but will be uncontrollable until they calm down. -->
+  <GMT_Hediff_Berserker_Rage.description>This person has flown into a berserk rage. They are significantly more capable in combat, but will be uncontrollable until they calm down.</GMT_Hediff_Berserker_Rage.description>
+  <!-- EN: a berserker rage -->
+  <GMT_Hediff_Berserker_Rage.labelNoun>a berserker rage</GMT_Hediff_Berserker_Rage.labelNoun>
+</LanguageData>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: boredom -->
+  <GMT_Hediff_Bored.label>boredom</GMT_Hediff_Bored.label>
+  <!-- EN: Listening to a boring person drone on and on is taking a mental toll. -->
+  <GMT_Hediff_Bored.description>Listening to a boring person drone on and on is taking a mental toll.</GMT_Hediff_Bored.description>
+  <!-- EN: boredom -->
+  <GMT_Hediff_Bored.labelNoun>boredom</GMT_Hediff_Bored.labelNoun>
+  <!-- EN: a bit bored -->
+  <GMT_Hediff_Bored.stages.a_bit_bored.label>a bit bored</GMT_Hediff_Bored.stages.a_bit_bored.label>
+  <!-- EN: somewhat bored -->
+  <GMT_Hediff_Bored.stages.somewhat_bored.label>somewhat bored</GMT_Hediff_Bored.stages.somewhat_bored.label>
+  <!-- EN: bored -->
+  <GMT_Hediff_Bored.stages.bored.label>bored</GMT_Hediff_Bored.stages.bored.label>
+  <!-- EN: very bored -->
+  <GMT_Hediff_Bored.stages.very_bored.label>very bored</GMT_Hediff_Bored.stages.very_bored.label>
+  <!-- EN: bored to death -->
+  <GMT_Hediff_Bored.stages.bored_to_death.label>bored to death</GMT_Hediff_Bored.stages.bored_to_death.label>
+</LanguageData>

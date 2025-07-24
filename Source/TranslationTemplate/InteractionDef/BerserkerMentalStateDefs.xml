@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: insult -->
+  <GMT_Interaction_InsultEnemy.label>insult</GMT_Interaction_InsultEnemy.label>
+  <!-- EN:
+    <li>r_logentry(p=3)->[INITIATOR_nameDef] [insulted] [target]'s [characteristic].</li>
+    <li>r_logentry->[INITIATOR_nameDef] compared [target] to [insultcomparison].</li>
+    <li>r_logentry->[INITIATOR_nameDef] called [target] [insultcomparison].</li>
+    <li>r_logentry(INITIATOR_cubeInterest==false,RECIPIENT_cubeInterest==true)->[INITIATOR_nameDef] called [target] a false idol worshipper.</li>
+    <li>r_logentry(INITIATOR_cubeInterest==false,RECIPIENT_cubeInterest==true)->[INITIATOR_nameDef] implied that [target] had been driven insane by the golden cube.</li>
+    <li>r_logentry(INITIATOR_cubeInterest==false,RECIPIENT_cubeInterest==true)->[INITIATOR_nameDef] [insulted] the golden cube.</li>
+    <li>characteristic(INITIATOR_cubeInterest==false)->[PersonalCharacteristic]</li>
+    <li>characteristic(INITIATOR_cubeInterest==true)->[PersonalCharacteristicCube]</li>
+    <li>target(p=4)->[RECIPIENT_nameDef]</li>
+    <li>target->[RECIPIENT_nameDef]'s [PersonFamily]</li>
+    <li>insulted(p=3)->insulted</li>
+    <li>insulted->openly insulted</li>
+    <li>insulted->loudly insulted</li>
+    <li>insulted->flagrantly insulted</li>
+    <li>insulted->directly insulted</li>
+    <li>insulted->viciously insulted</li>
+    <li>insulted->flagrantly disrespected</li>
+    <li>insulted->slandered</li>
+    <li>insulted->hurled invective about</li>
+    <li>insulted->derided</li>
+    <li>insultcomparison(INITIATOR_cubeInterest==false,p=2)->a [Animal]</li>
+    <li>insultcomparison(INITIATOR_cubeInterest==false)->a [Enemy]</li>
+    <li>insultcomparison(INITIATOR_cubeInterest==true)->a sphere</li>
+    <li>insultcomparison(INITIATOR_cubeInterest==true)->something totally pointless</li>
+    <li>insultcomparison(INITIATOR_cubeInterest==true)->a non-cubic platonic object</li>
+  -->
+  <GMT_Interaction_InsultEnemy.logRulesInitiator.rulesStrings>
+    <li>r_logentry(p=3)->[INITIATOR_nameDef] [insulted] [target]'s [characteristic].</li>
+    <li>r_logentry->[INITIATOR_nameDef] compared [target] to [insultcomparison].</li>
+    <li>r_logentry->[INITIATOR_nameDef] called [target] [insultcomparison].</li>
+    <li>r_logentry(INITIATOR_cubeInterest==false,RECIPIENT_cubeInterest==true)->[INITIATOR_nameDef] called [target] a false idol worshipper.</li>
+    <li>r_logentry(INITIATOR_cubeInterest==false,RECIPIENT_cubeInterest==true)->[INITIATOR_nameDef] implied that [target] had been driven insane by the golden cube.</li>
+    <li>r_logentry(INITIATOR_cubeInterest==false,RECIPIENT_cubeInterest==true)->[INITIATOR_nameDef] [insulted] the golden cube.</li>
+    <li>characteristic(INITIATOR_cubeInterest==false)->[PersonalCharacteristic]</li>
+    <li>characteristic(INITIATOR_cubeInterest==true)->[PersonalCharacteristicCube]</li>
+    <li>target(p=4)->[RECIPIENT_nameDef]</li>
+    <li>target->[RECIPIENT_nameDef]'s [PersonFamily]</li>
+    <li>insulted(p=3)->insulted</li>
+    <li>insulted->openly insulted</li>
+    <li>insulted->loudly insulted</li>
+    <li>insulted->flagrantly insulted</li>
+    <li>insulted->directly insulted</li>
+    <li>insulted->viciously insulted</li>
+    <li>insulted->flagrantly disrespected</li>
+    <li>insulted->slandered</li>
+    <li>insulted->hurled invective about</li>
+    <li>insulted->derided</li>
+    <li>insultcomparison(INITIATOR_cubeInterest==false,p=2)->a [Animal]</li>
+    <li>insultcomparison(INITIATOR_cubeInterest==false)->a [Enemy]</li>
+    <li>insultcomparison(INITIATOR_cubeInterest==true)->a sphere</li>
+    <li>insultcomparison(INITIATOR_cubeInterest==true)->something totally pointless</li>
+    <li>insultcomparison(INITIATOR_cubeInterest==true)->a non-cubic platonic object</li>
+  </GMT_Interaction_InsultEnemy.logRulesInitiator.rulesStrings>
+</LanguageData>

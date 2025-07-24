@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Animal Empathy -->
+  <GMT_Animal_Friend.degreeDatas.Animal_Empathy.label>Animal Empathy</GMT_Animal_Friend.degreeDatas.Animal_Empathy.label>
+  <!-- EN: {PAWN_nameDef} is a friend to animals of all kinds. {PAWN_pronoun} would never harm them, and they would never harm {PAWN_objective}. -->
+  <GMT_Animal_Friend.degreeDatas.Animal_Empathy.description>{PAWN_nameDef} is a friend to animals of all kinds. {PAWN_pronoun} would never harm them, and they would never harm {PAWN_objective}.</GMT_Animal_Friend.degreeDatas.Animal_Empathy.description>
+  <!-- EN: Berserker -->
+  <GMT_Berserker.degreeDatas.Berserker.label>Berserker</GMT_Berserker.degreeDatas.Berserker.label>
+  <!-- EN: {PAWN_nameDef} has a fury simmering deep within {PAWN_objective}. In combat, {PAWN_pronoun} may fly into a berserker rage, becoming an uncontrollable whirlwind of destruction. -->
+  <GMT_Berserker.degreeDatas.Berserker.description>{PAWN_nameDef} has a fury simmering deep within {PAWN_objective}. In combat, {PAWN_pronoun} may fly into a berserker rage, becoming an uncontrollable whirlwind of destruction.</GMT_Berserker.degreeDatas.Berserker.description>
+  <!-- EN: Boring -->
+  <GMT_Boring.degreeDatas.Boring.label>Boring</GMT_Boring.degreeDatas.Boring.label>
+  <!-- EN: {PAWN_nameDef} justs keeps talking in one long incredibly unbroken sentence moving from topic to topic so that no-one has a chance to interrupt; it is really quite hypnotic. -->
+  <GMT_Boring.degreeDatas.Boring.description>{PAWN_nameDef} justs keeps talking in one long incredibly unbroken sentence moving from topic to topic so that no-one has a chance to interrupt; it is really quite hypnotic.</GMT_Boring.degreeDatas.Boring.description>
+  <!-- EN: Caravaneer -->
+  <GMT_Caravaneer.degreeDatas.Caravaneer.label>Caravaneer</GMT_Caravaneer.degreeDatas.Caravaneer.label>
+  <!-- EN: {PAWN_nameDef} has a natural talent for logistics. {PAWN_possessive} leadership allows caravans to move 15% faster. -->
+  <GMT_Caravaneer.degreeDatas.Caravaneer.description>{PAWN_nameDef} has a natural talent for logistics. {PAWN_possessive} leadership allows caravans to move 15% faster.</GMT_Caravaneer.degreeDatas.Caravaneer.description>
+  <!-- EN: Drunken Master -->
+  <GMT_Drunken_Master.degreeDatas.Drunken_Master.label>Drunken Master</GMT_Drunken_Master.degreeDatas.Drunken_Master.label>
+  <!-- EN: {PAWN_nameDef} is a master of Zuì Quán: drunken boxing. Or at least, it seems that way when {PAWN_pronoun}'s wasted. The more {PAWN_pronoun} drinks, the better {PAWN_pronoun} fights. -->
+  <GMT_Drunken_Master.degreeDatas.Drunken_Master.description>{PAWN_nameDef} is a master of Zuì Quán: drunken boxing. Or at least, it seems that way when {PAWN_pronoun}'s wasted. The more {PAWN_pronoun} drinks, the better {PAWN_pronoun} fights.</GMT_Drunken_Master.degreeDatas.Drunken_Master.description>
+  <!-- EN: Juggernaut -->
+  <GMT_Juggernaut.degreeDatas.Juggernaut.label>Juggernaut</GMT_Juggernaut.degreeDatas.Juggernaut.label>
+  <!-- EN: Whether due to strength, agility, or stupidity, {PAWN_nameDef} cannot be stopped. {PAWN_pronoun} cannot be stunned, and will not be staggered by attacks. -->
+  <GMT_Juggernaut.degreeDatas.Juggernaut.description>Whether due to strength, agility, or stupidity, {PAWN_nameDef} cannot be stopped. {PAWN_pronoun} cannot be stunned, and will not be staggered by attacks.</GMT_Juggernaut.degreeDatas.Juggernaut.description>
+  <!-- EN: Spawn of Satan -->
+  <GMT_Satan_Spawn.degreeDatas.Spawn_of_Satan.label>Spawn of Satan</GMT_Satan_Spawn.degreeDatas.Spawn_of_Satan.label>
+  <!-- EN: {PAWN_nameDef} bears the mark of the Prince of Darkness, the King of Hell, the Father of Lies: Lucifer himself. None know for what reason {PAWN_pronoun} has come to this world, or what dark plan {PAWN_pronoun} aims to enact, only that in {PAWN_possessive} wake, death and destruction follow. Be afraid. -->
+  <GMT_Satan_Spawn.degreeDatas.Spawn_of_Satan.description>{PAWN_nameDef} bears the mark of the Prince of Darkness, the King of Hell, the Father of Lies: Lucifer himself. None know for what reason {PAWN_pronoun} has come to this world, or what dark plan {PAWN_pronoun} aims to enact, only that in {PAWN_possessive} wake, death and destruction follow. Be afraid.</GMT_Satan_Spawn.degreeDatas.Spawn_of_Satan.description>
+  <!-- EN: slob -->
+  <GMT_Slob.degreeDatas.slob.label>slob</GMT_Slob.degreeDatas.slob.label>
+  <!-- EN: {PAWN_nameDef} is a complete slob. {PAWN_pronoun} tracks in dirt, tosses trash everywhere, and refuses to clean up. -->
+  <GMT_Slob.degreeDatas.slob.description>{PAWN_nameDef} is a complete slob. {PAWN_pronoun} tracks in dirt, tosses trash everywhere, and refuses to clean up.</GMT_Slob.degreeDatas.slob.description>
+  <!-- EN: Teacher -->
+  <GMT_Teacher.degreeDatas.Teacher.label>Teacher</GMT_Teacher.degreeDatas.Teacher.label>
+  <!-- EN: {PAWN_nameDef} loves to help people learn. {PAWN_pronoun} will teach a little something to everybody {PAWN_pronoun} talks to. -->
+  <GMT_Teacher.degreeDatas.Teacher.description>{PAWN_nameDef} loves to help people learn. {PAWN_pronoun} will teach a little something to everybody {PAWN_pronoun} talks to.</GMT_Teacher.degreeDatas.Teacher.description>
+</LanguageData>

@@ -7,11 +7,11 @@ namespace Garthor_More_Traits;
 
 public class GMT_JobGiver_FightDownedEnemies : JobGiver_AIFightEnemies
 {
-    private static readonly IntRange My_ExpiryInterval_Melee = new IntRange(360, 480);
+    private static readonly IntRange My_ExpiryInterval_Melee = new(360, 480);
 
     private static FieldInfo fieldinfo_targetAcquireRadius;
 
-    protected float targetAcquireRadius
+    private new float targetAcquireRadius
     {
         get
         {

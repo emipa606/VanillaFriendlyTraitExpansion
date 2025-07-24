@@ -19,12 +19,12 @@ internal static class JecsTools
 
     internal static bool isHarmfulVerb(Verb verb, out bool harmful)
     {
-        var verbProperties_Ability =
-            verb is Verb_UseAbility verb_UseAbility ? verb_UseAbility.UseAbilityProps : null;
+        var verbPropertiesAbility =
+            verb is Verb_UseAbility verbUseAbility ? verbUseAbility.UseAbilityProps : null;
         bool result;
-        if (verbProperties_Ability != null)
+        if (verbPropertiesAbility != null)
         {
-            harmful = verbProperties_Ability.isViolent;
+            harmful = verbPropertiesAbility.isViolent;
             result = true;
         }
         else

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: harmed an animal -->
+  <GMT_Animal_Friend_Hurt_Animal.stages.harmed_an_animal.label>harmed an animal</GMT_Animal_Friend_Hurt_Animal.stages.harmed_an_animal.label>
+  <!-- EN: Oh no! What have I done! -->
+  <GMT_Animal_Friend_Hurt_Animal.stages.harmed_an_animal.description>Oh no! What have I done!</GMT_Animal_Friend_Hurt_Animal.stages.harmed_an_animal.description>
+</LanguageData>

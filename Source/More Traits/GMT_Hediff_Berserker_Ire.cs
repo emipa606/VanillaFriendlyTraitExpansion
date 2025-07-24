@@ -12,7 +12,7 @@ public class GMT_Hediff_Berserker_Ire : HediffWithComps
 
     private static FieldInfo fieldinfo_visible;
 
-    protected static readonly float scaleFactor = 0.5f;
+    private static readonly float scaleFactor = 0.5f;
 
     protected bool visible
     {
