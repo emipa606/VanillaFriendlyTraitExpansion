@@ -9,14 +9,14 @@ namespace Garthor_More_Traits;
 [HarmonyPatch(typeof(JobGiver_TakeCombatEnhancingDrug), "FindCombatEnhancingDrug")]
 public class JobGiver_TakeCombatEnhancingDrug_FindCombatEnhancingDrug
 {
-    private static bool Prepare()
+    public static bool Prepare()
     {
         var method = typeof(JobGiver_TakeCombatEnhancingDrug).GetMethod("FindCombatEnhancingDrug",
             BindingFlags.Instance | BindingFlags.NonPublic);
         return !(method == null || method.HasAttribute<ObsoleteAttribute>());
     }
 
-    private static void Postfix(ref Thing __result, Pawn pawn)
+    public static void Postfix(ref Thing __result, Pawn pawn)
     {
         if (pawn?.story?.traits?.HasTrait(GMT_DefOf.GMT_Drunken_Master) != true)
         {

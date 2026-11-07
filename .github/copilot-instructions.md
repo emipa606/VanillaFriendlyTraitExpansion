@@ -1,31 +1,68 @@
-# GitHub Copilot Instructions for RimWorld Modding Project
+# Vanilla-Friendly Trait Expansion (Continued) GitHub Copilot Instructions
 
 ## Mod Overview and Purpose
-This RimWorld mod project enhances the gameplay by adding various new traits, mental states, and interactions. The mod aims to diversify pawn behavior and interactions, providing a richer and more dynamic colony management experience for players. It includes features like new mental states, additional trait mechanics, specialized job drivers, and unique interactions based on personality traits.
+
+The Vanilla-Friendly Trait Expansion (Continued) mod is an update to the original Vanilla-Friendly Trait Expansion mod by Garthor. This mod adds a variety of new traits that are designed to be balanced with vanilla traits while offering more interesting gameplay mechanics. The traits aim to enhance the player experience by providing unique abilities and characteristics to colonists without overwhelming them.
 
 ## Key Features and Systems
-- **Traits and Mental States**: Introduces new traits like "Juggernaut" and "Drunken Master," alongside mental states such as "Berserking" and "Bored To Sleep."
-- **Custom Helpers**: Functions within helper classes to manage trait behaviors and effects, such as `GMT_Animal_Friend_Helper` and `GMT_Teacher_Helper`.
-- **Job Drivers**: Specialized job drivers like `GMT_JobDriver_AttackMeleeDowned` allow for unique combat-related actions.
-- **Harmony Patching**: Utilizes Harmony to patch existing game methods, modifying or extending RimWorld's default functionality.
-- **XML Integration**: Although primarily in C#, XML is used for DefModExtensions and other similar integration points.
+
+### Traits
+The mod introduces the following traits:
+1. **Animal Empathy**: The colonist cannot harm animals and is not harmed by them.
+2. **Slob**: Produces a lot of filth and does not clean.
+3. **Caravaneer**: Provides a bonus move speed to caravans.
+4. **Boring**: Bores other colonists.
+5. **Teacher**: Can teach skills to other pawns.
+6. **Drunken Master**: Gains large bonuses to melee combat while drunk.
+7. **Berserker**: Enters a berserk rage in combat, becoming significantly stronger but uncontrollable.
+8. **Juggernaut**: Immune to stuns and staggers.
+
+### Mental States
+The mod includes custom mental states such as Berserker Rage and Boring, which can affect the colonists' behavior and interactions.
+
+### XML Integration
+The mod defines its traits, mental states, thoughts, and other game elements using XML files. These files are located in the `Defs` folder and are crucial for defining the properties and behaviors of the new traits and mental states.
+
+### Harmony Patching
+The mod uses Harmony to patch existing game mechanics and integrate new behaviors. Harmony is a powerful tool that allows mods to modify the game's code without altering the original files. This ensures compatibility and stability.
 
 ## Coding Patterns and Conventions
-- **Class Structure**: Each class is designated for a specific system or feature, following a clear naming convention (e.g., `Building_Door_Tick_Patch` for patches related to building doors).
-- **Internal Static Classes**: Used for utility and helper methods to ensure encapsulation and easy access.
-- **Public Class Usage**: Used for components that need to interact with the broader game environment or other mods.
 
-## XML Integration
-XML is used minimally but plays a crucial role in integrating new traits and behaviors. DefModExtensions, such as `GMT_Trait_ModExtension`, aid in defining additional attributes and behaviors directly through XML, complementing the C# backend logic.
+### C# Files
+The mod's C# files are located in the `Source` folder and are responsible for implementing the logic behind the new traits and mental states. Key files include:
+- `JecsTools.cs`: Contains utility methods for compatibility with other mods.
+- `GMT_Hediff_Berserker_Ire.cs` and `GMT_Hediff_Berserker_Rage.cs`: Implement the Berserker rage mechanics.
+- `GMT_JobDriver_AttackMeleeDowned.cs` and `GMT_JobGiver_FightDownedEnemies.cs`: Define combat behaviors for the colonists.
 
-## Harmony Patching
-- **Patch Methods**: Implemented using static classes with methods designed to target specific game functions. For example, `StunHandler_StunFor_Patch` modifies how stunning mechanics work.
-- **Conditional Patching**: Classes like `PatchIfModAttribute` check for the presence of other mods before applying patches, ensuring compatibility and modularity.
-- **Granular Control**: Patches are organized by their functional area, like `Verb_ValidateTarget_Patch` for target validation in combat.
+### XML Files
+The mod's XML files are located in the `Defs` folder and are used to define the properties of the new traits, mental states, and thoughts. Key files include:
+- `BerserkerMentalStateDefs.xml`: Defines the Berserker rage mental state.
+- `BoringMentalStateDefs.xml`: Defines the Boring mental state.
+- `ThoughtDefs.xml`: Defines custom thoughts.
+- `TraitDefs.xml`: Defines the new traits.
 
 ## Suggestions for Copilot
-- **Pattern Recognition**: When writing new patches, follow existing patterns seen in classes like `StaggerHandler_StaggerFor_Patch`.
-- **Method Suggestions**: Leverage existing helper and utility methods like those found in `GMT_Slob_Helper` for consistent implementation of new features.
-- **XML Code-Gen**: When XML integration is needed, auto-generate XML nodes based on class properties, especially for DefModExtensions.
 
-These instructions provide a comprehensive guide for maintaining and expanding the RimWorld mod project using GitHub Copilot. They establish best practices and patterns for mod developers to follow and suggest how CoPilot can assist in enhancing productivity within this context.
+To ensure that GitHub Copilot is useful for this mod, here are some suggestions:
+1. **Trait Definitions**: When asked to define a new trait, Copilot should focus on creating a balanced and interesting trait that aligns with the mod's purpose.
+2. **Mental State Implementations**: When asked to implement a mental state, Copilot should provide code that integrates seamlessly with the game's existing mental state system.
+3. **Harmony Patches**: When asked to create a Harmony patch, Copilot should provide code that is well-commented and follows the Harmony patching conventions.
+4. **XML Files**: When asked to create or modify an XML file, Copilot should provide a well-structured XML file that follows the game's naming conventions and structure.
+
+By following these guidelines, GitHub Copilot can be a valuable tool for mod developers working on the Vanilla-Friendly Trait Expansion (Continued) mod.
+
+## Project Solution Guidelines
+- Relevant mod XML files are included as Solution Items under the solution folder named XML, these can be read and modified from within the solution.
+- Use these in-solution XML files as the primary files for reference and modification.
+- The `.github/copilot-instructions.md` file is included in the solution under the `.github` solution folder, so it should be read/modified from within the solution instead of using paths outside the solution. Update this file once only, as it and the parent-path solution reference point to the same file in this workspace.
+- When making functional changes in this mod, ensure the documented features stay in sync with implementation; use the in-solution `.github` copy as the primary file.
+- In the solution is also a project called Assembly-CSharp, containing a read-only version of the decompiled game source, for reference and debugging purposes.
+- For any new documentation, update this copilot-instructions.md file rather than creating separate documentation files.
+
+
+## Hard rules (must follow)
+- Do NOT run commands that modify the repo (no git commit, git apply, dotnet format) unless explicitly asked.
+- Prefer minimal reads: read only the smallest code region needed (around the suspicious lines).
+- When mentioning SonarQube issues, automatically use the SonarQube MCP service to fetch and address issues instead of making inferred fixes without querying SonarQube first.
+- When mentioning the rimworld log, automatically use the Rimworld MCP service to fetch the log.
+

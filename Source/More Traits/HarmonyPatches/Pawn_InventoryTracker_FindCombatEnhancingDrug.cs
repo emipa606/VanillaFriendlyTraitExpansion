@@ -9,14 +9,14 @@ namespace Garthor_More_Traits;
 [HarmonyPatch(typeof(Pawn_InventoryTracker), nameof(Pawn_InventoryTracker.FindCombatEnhancingDrug))]
 public class Pawn_InventoryTracker_FindCombatEnhancingDrug
 {
-    private static bool Prepare()
+    public static bool Prepare()
     {
         var method = typeof(Pawn_InventoryTracker).GetMethod(nameof(Pawn_InventoryTracker.FindCombatEnhancingDrug),
             BindingFlags.Instance | BindingFlags.Public);
         return !(method == null || method.HasAttribute<ObsoleteAttribute>());
     }
 
-    private static void Postfix(Pawn_InventoryTracker __instance, ref Thing __result)
+    public static void Postfix(Pawn_InventoryTracker __instance, ref Thing __result)
     {
         var pawn = __instance.pawn;
         if (pawn?.story?.traits?.HasTrait(GMT_DefOf.GMT_Drunken_Master) != true)

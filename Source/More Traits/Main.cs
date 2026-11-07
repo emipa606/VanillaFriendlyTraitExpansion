@@ -8,7 +8,7 @@ using Verse;
 namespace Garthor_More_Traits;
 
 [StaticConstructorOnStartup]
-internal class Main
+internal static class Main
 {
     static Main()
     {

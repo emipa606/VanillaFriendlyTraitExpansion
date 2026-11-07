@@ -9,7 +9,7 @@ namespace Garthor_More_Traits;
 [HarmonyPatch(typeof(PawnInventoryGenerator), "GiveDrugsIfAddicted")]
 public static class PawnInventoryGenerator_GiveDrugsIfAddicted
 {
-    private static void Postfix(Pawn p)
+    public static void Postfix(Pawn p)
     {
         if (p?.story?.traits?.HasTrait(GMT_DefOf.GMT_Drunken_Master) != true)
         {

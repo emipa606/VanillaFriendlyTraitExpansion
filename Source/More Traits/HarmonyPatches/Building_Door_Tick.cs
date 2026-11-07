@@ -10,7 +10,7 @@ namespace Garthor_More_Traits;
 [HarmonyPatch(typeof(Building_Door), "Tick")]
 public static class Building_Door_Tick
 {
-    private static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
+    public static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
     {
         var i = 0;
         var instrs = instructions.ToList();

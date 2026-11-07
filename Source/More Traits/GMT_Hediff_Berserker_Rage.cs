@@ -15,10 +15,7 @@ public class GMT_Hediff_Berserker_Rage : HediffWithComps
         }
 
         var firstHediffOfDef = pawn.health.hediffSet.GetFirstHediffOfDef(GMT_DefOf.GMT_Hediff_Berserker_Ire);
-        if (firstHediffOfDef != null)
-        {
-            firstHediffOfDef.Severity += 0.024f;
-        }
+        firstHediffOfDef?.Severity += 0.024f;
 
         if (pawn.MentalStateDef != GMT_DefOf.GMT_MentalState_Berserking)
         {

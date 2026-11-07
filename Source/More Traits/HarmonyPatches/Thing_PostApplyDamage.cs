@@ -6,7 +6,7 @@ namespace Garthor_More_Traits;
 [HarmonyPatch(typeof(Thing), nameof(Thing.PostApplyDamage))]
 public static class Thing_PostApplyDamage
 {
-    private static bool Prefix(Thing __instance, DamageInfo dinfo, float totalDamageDealt)
+    public static bool Prefix(Thing __instance, DamageInfo dinfo, float totalDamageDealt)
     {
         if (!(totalDamageDealt > 0f) || !GMT_Animal_Friend_Helper.ShouldBeFriendly(__instance, dinfo.Instigator))
         {

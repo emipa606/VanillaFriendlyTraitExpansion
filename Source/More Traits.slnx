@@ -6,4 +6,21 @@
     <BuildType Name="Release" />
   </Configurations>
   <Project Path="More Traits/More Traits.csproj" />
+  <Folder Name="/XML/1.7/Defs/">
+    <File Path="../1.7/Defs/ThoughtDefs.xml" />
+    <File Path="../1.7/Defs/TraitDefs.xml" />
+  </Folder>
+  <Folder Name="/XML/1.7/Patches/">
+    <File Path="../1.7/Patches/Core.xml" />
+  </Folder>
+  <Folder Name="/XML/1.7/Defs/Mental States/">
+    <File Path="../1.7/Defs/Mental States/BerserkerMentalStateDefs.xml" />
+    <File Path="../1.7/Defs/Mental States/BoringMentalStateDefs.xml" />
+  </Folder>
+  <Folder Name="/XML/About/">
+    <File Path="../About/about.xml" />
+  </Folder>
+  <Folder Name="/XML/Languages/English/Keyed/">
+    <File Path="../Languages/English/Keyed/Translations.xml" />
+  </Folder>
 </Solution>

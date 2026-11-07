@@ -8,7 +8,7 @@ namespace Garthor_More_Traits;
 [HarmonyPatch(typeof(WorkGiver_Slaughter), nameof(WorkGiver_Slaughter.HasJobOnThing))]
 public static class WorkGiver_Slaughter_HasJobOnThing
 {
-    private static bool Prefix(Pawn pawn, Thing t)
+    public static bool Prefix(Pawn pawn, Thing t)
     {
         bool result;
         if (GMT_Animal_Friend_Helper.ShouldBeFriendly(pawn, t))

@@ -17,7 +17,7 @@ namespace Garthor_More_Traits;
 ])]
 public static class CaravanTicksPerMoveUtility_GetTicksPerMove
 {
-    private static void Postfix(ref int __result, List<Pawn> pawns, StringBuilder explanation)
+    public static void Postfix(ref int __result, List<Pawn> pawns, StringBuilder explanation)
     {
         foreach (var pawn in pawns)
         {

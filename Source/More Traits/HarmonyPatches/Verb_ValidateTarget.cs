@@ -6,7 +6,7 @@ namespace Garthor_More_Traits;
 [HarmonyPatch(typeof(Verb), nameof(Verb.ValidateTarget))]
 public static class Verb_ValidateTarget
 {
-    private static bool Prefix(Verb __instance, ref bool __result, LocalTargetInfo target)
+    public static bool Prefix(Verb __instance, ref bool __result, LocalTargetInfo target)
     {
         bool result;
         if (GMT_Animal_Friend_Helper.isHarmfulVerb(__instance) &&
